@@ -1,0 +1,134 @@
+/* Reset some default styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  font-size: 2vh;
+  --color-text: #e0e0e0;
+  --color-bg: #000000;
+  --color-link: #fff;
+  --color-link-hover: #fff;
+}
+
+body, html {
+  font-family: 'ZenHand', sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 500;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 255);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root, #root > div {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+  z-index: 100;
+  transition: opacity 0.5s ease;
+  opacity: 0.2;
+}
+
+nav:hover {
+  opacity: 1;
+}
+
+/* Link styles */
+
+nav a, a {
+  color: #ffffff;
+  font-weight: 400;
+  transition: transform 1s ease, font-size 0.3s ease, font-weight 0.3s ease;
+  text-decoration: none;
+}
+
+nav a:hover, a:hover {
+  transform: scale(1);
+  font-weight: 1000;
+}
+
+.unbutton {
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+.unbutton:focus {
+  outline: none;
+}
+
+.frame {
+  z-index: 10;
+  transform: translateY(-100%);
+  position: fixed;
+  width: 100%;
+  display: flex;
+  font-weight: 10;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(59, 59, 59, 0.5); /* Semi-transparent white */
+  backdrop-filter: blur(100px); /* Blur effect */
+  padding: 11px 20px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+}
+
+.frame__title {
+  grid-area: title;
+  display: flex;
+  font-weight: 900;
+}
+
+.frame__title-main a {
+  font-weight: 900;
+  color: var(--color-text);
+  font-size: 2.5vh;
+}
+
+.link-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  list-style: none;
+  margin: 0;
+  margin-right: 5vh;
+  padding: 4;
+}
+
+.link-menu li a {
+  color:var(--color-text);
+}
+
+/* Responsive design */
+
+@media screen and (max-width: 768px) {
+  nav {
+    color: #ffffff;
+  }
+}
