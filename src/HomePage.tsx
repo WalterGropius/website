@@ -15,6 +15,7 @@ import {
 import { Canvas, useThree } from '@react-three/fiber';
 import { MeshTransmissionMaterial } from '@react-three/drei';
 import styled from 'styled-components';
+import { EffectComposer, Bloom,DepthOfField,Noise,Vignette } from '@react-three/postprocessing';
 
 
 
@@ -45,13 +46,13 @@ function CanvasContent() {
       samples: 2,
       resolution: 8,
       transmission: 1,
-      roughness: 0.02,
+      roughness: 0,
       thickness: 1.01,
       ior: 1.42,
       chromaticAberration: 0.03,
       distortion: 0.15,
       temporalDistortion: 0.05,
-      clearcoat: 1,
+      clearcoat: 10,
       attenuationDistance: 0.5,
       transmissionSampler: true
     };
@@ -72,7 +73,7 @@ function CanvasContent() {
     <>
       <Environment files={'/flatway4k.hdr'} background={true} />
       <ambientLight intensity={0.7} />
-      <pointLight position={0,0,5} intensity={isHovered ? 2000 : 0.1} />
+      <pointLight position={0,3,5} intensity={isHovered ? 50 : 0.1} />
 
       <mesh scale={0.7}
         onClick={handleClick}
@@ -118,17 +119,24 @@ function HomePage() {
         transform: 'translate(-50%, -50%)',
         textAlign: 'center',
       }}>
-        Loading
+        <br></br><br></br><br></br><br></br>Loading
       </div>
     }>
     
     
 
-      <Canvas shadows dpr={[1, 2]} camera={{ fov: 50 }}>
-      <CanvasContent />
-        <OrbitControls autoRotate={true} autoRotateSpeed={0.2} enableZoom={false} maxDistance={10} minDistance={10}/>
-        <Stars scale={0}/>
-    </Canvas>
+    <Canvas shadows dpr={[1, 2]} camera={{ fov: 50 }}>
+  <CanvasContent />
+  <OrbitControls autoRotate={true} autoRotateSpeed={0.2} enableZoom={false} maxDistance={10} minDistance={10}/>
+  
+
+  <EffectComposer>
+       
+        <Bloom intensity={2}luminanceThreshold={0} luminanceSmoothing={2} height={300} />
+        <Noise opacity={0.02} />
+        <Vignette eskil={false} offset={0.1} darkness={1.1} />
+      </EffectComposer>
+</Canvas>
     </Suspense > 
     
   );
