@@ -1,4 +1,10 @@
 /* Reset some default styles */
+@font-face {
+  font-family: 'zenhand';
+  src: url('./zenhand2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
   margin: 0;
@@ -16,7 +22,7 @@
 }
 
 body, html {
-  font-family: 'ZenHand', sans-serif;
+  font-family: 'zenhand', sans-serif;
   color: var(--color-text);
   background-color: var(--color-bg);
   -webkit-font-smoothing: antialiased;
