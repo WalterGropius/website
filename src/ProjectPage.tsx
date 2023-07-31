@@ -1,16 +1,23 @@
-// ProjectPage.js
-
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+
+type Item = {
+  id: number;
+  image: string;
+  title: string;
+  description: string;
+  details: string;
+  link: string;
+};
 
 function ProjectPage() {
   const { id } = useParams();
-  const [item, setItem] = useState(null);
+  const [item, setItem] = useState<Item | null>(null);
 
   useEffect(() => {
     fetch(`/portfolio.json`)
       .then(response => response.json())
-      .then(data => setItem(data.find(item => item.id === Number(id))))
+      .then(data => setItem(data.find((item: Item) => item.id === Number(id))))
       .catch(error => console.error('Error:', error));
   }, [id]);
 

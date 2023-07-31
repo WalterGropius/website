@@ -8,7 +8,7 @@ const Sketchfab: React.FC = () => {
         width={"100%"}
         height={"100%"}
        
-        allow="autoplay; fullscreen; xr-spatial-tracking"
+        
         xr-spatial-tracking
         execution-while-out-of-viewport
         execution-while-not-rendered

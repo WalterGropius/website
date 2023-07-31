@@ -1,6 +1,6 @@
 // HomePage.js
 
-import React, { Suspense,useState } from 'react';
+import  { Suspense,useState } from 'react';
 import { 
   Environment, 
   Sphere, 
@@ -9,13 +9,12 @@ import {
   RoundedBox,
   Text3D,
   OrbitControls,
-  Stars,
   Billboard
 } from '@react-three/drei';
-import { Canvas, useThree } from '@react-three/fiber';
+import { Canvas } from '@react-three/fiber';
 import { MeshTransmissionMaterial } from '@react-three/drei';
-import styled from 'styled-components';
-import { EffectComposer, Bloom,DepthOfField,Noise,Vignette } from '@react-three/postprocessing';
+
+import { EffectComposer, Bloom,Noise,Vignette } from '@react-three/postprocessing';
 
 
 
@@ -24,7 +23,7 @@ import { EffectComposer, Bloom,DepthOfField,Noise,Vignette } from '@react-three/
 function CanvasContent() {
   const [isHovered, setIsHovered] = useState(false);
   const [shape, setShape] = useState('sphere');
-  const [text, setText] = useState('click \n\n\n\here...');
+  const [text, setText] = useState('click \n\n\n\n here...');
 
   const handlePointerOver = () => {
     setIsHovered(true);
@@ -50,7 +49,7 @@ function CanvasContent() {
       thickness: 1.01,
       ior: 1.42,
       chromaticAberration: 0.03,
-      distortion: 0.15,
+      distortionScale: 0.15,
       temporalDistortion: 0.05,
       clearcoat: 10,
       attenuationDistance: 0.5,
@@ -72,8 +71,8 @@ function CanvasContent() {
   return (
     <>
       <Environment files={'/flatway4k.hdr'} background={true} />
-      <ambientLight intensity={0.7} />
-      <pointLight position={0,3,5} intensity={isHovered ? 50 : 0.1} />
+      <ambientLight intensity={1} />
+      <pointLight position={[0,3,5]} intensity={isHovered ? 50 : 0.1} />
 
       <mesh scale={0.7}
         onClick={handleClick}
@@ -93,13 +92,13 @@ function CanvasContent() {
           bevelSize={0.04}
           bevelThickness={0.1}
           height={0.05}
-          thickness={0}
+          
           lineHeight={0.5}
           letterSpacing={isHovered ? 1 : 0.9}
           size={isHovered ? 1.3 : 0.9}
           font="./zenhand.json">
           {text}
-          <meshStandardMaterial color={"white"} metalness={1} roughness={0} smooth={1} flatshading={0} />
+          <meshStandardMaterial color={"white"} metalness={1} roughness={0.1}  />
         </Text3D>
       </Billboard>
     </>

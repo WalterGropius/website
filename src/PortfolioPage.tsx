@@ -1,16 +1,23 @@
-// PortfolioPage.js
-
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+type Item = {
+  id: number;
+  image: string;
+  title: string;
+  description: string;
+  details: string;
+  link: string;
+};
+
 function PortfolioPage() {
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState<Item[]>([]);
 
   // Fetch your items from your JSON file on component mount
   useEffect(() => {
     fetch('/portfolio.json')
       .then(response => response.json())
-      .then(data => setItems(data))
+      .then((data: Item[]) => setItems(data))
       .catch(error => console.error('Error:', error));
   }, []);
 
