@@ -22,6 +22,82 @@
   --color-link-hover: #fff;
 }
 
+.cvt {
+  /* Set the padding and margin of the .cvt element */
+  padding: 100px 200px 200px 200px;
+  margin: 200px 200px 200px 200px;
+  font-size: xx-large;
+  height: 100%;
+  width: 100%;
+  align-self: center;
+}
+
+.c9 {
+  /* Set the font size and color of the .c9 class */
+  font-size: 2vh;
+  color: #303a8f;
+}
+
+.c4 {
+  /* Set the font size and color of the .c4 class */
+  font-size: 3vh;
+  color: #882778;
+  
+}
+
+.c0 {
+  /* Set the font size and color of the .c0 class */
+  font-size: 2vh;
+  color: #5d9613;
+}
+
+.c2 {
+  /* Set the font weight of the .c2 class */
+  font-weight: 900;
+}
+
+.c6 {
+  /* Set the font size and color of the .c6 class */
+  font-size: 2.5vh;
+  color: #c9f01d;
+}
+
+.c12 {
+  /* Set the font size and color of the .c12 class */
+  font-size: 1.2vh;
+  color: #128d2c;
+}
+
+.c13 {
+  /* Set the line height of the .c13 class */
+  line-height: 1.5;
+}
+
+.c14 {
+  /* Set the font size and color of the .c14 class */
+  font-size: 0.8vh;
+  color: #ca1515;
+}
+
+.c18 {
+  /* Set the font size and color of the .c18 class */
+  font-size: 1.2vh;
+  color: #0eaa28;
+}
+
+.c21 {
+  /* Set the width and border of the .c21 class */
+  width: 90%;
+  border: 1px solid #ffffff;
+}
+
+.c22 {
+  /* Set the width and border of the .c22 class */
+  width: 10%;
+  border: 1px solid #ffffff;
+}
+
+
 body, html {
   font-family: 'ZenHand', sans-serif;
   color: var(--color-text);
