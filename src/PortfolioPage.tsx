@@ -25,10 +25,11 @@ function PortfolioPage() {
   return (
     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem' }}>
       {items.map((item, index) => (
-        <div key={index} style={{ border: '1px solid #ddd', padding: '1rem' }}>
-          <img src={item.image} style={{ width: '100%', height: 'auto' }} />
+        <div key={index} style={{ padding: '1rem' }}>
+          
+          <Link to={`/work/${item.id}`}><img src={item.image} style={{ width: '100%', height: 'auto' }} />
           <h2>{item.title}</h2>
-          <Link to={`/work/${item.id}`}>Learn More</Link>
+          <p>{item.description}</p></Link>
         </div>
       ))}
     </div>

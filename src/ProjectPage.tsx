@@ -1,6 +1,6 @@
 import  { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 type Item = {
   id: number;
   image: string;
@@ -26,12 +26,13 @@ function ProjectPage() {
 
   return (
     <div>
-      <img src={item.image} />
+     
+      <a href={item.link} target="_blank" rel="noopener noreferrer"> <img src={item.image} />
       <h1>{item.title}</h1>
       <p>{item.date}</p>
-      <p>{item.description}</p>
-      <a href={item.link} target="_blank" rel="noopener noreferrer">link</a>
+      <p>{item.description}</p></a>
       <p>{item.tags}</p>
+      <Link to={"/work"}>back</Link>
       {/* More item details here */}
     </div>
   );
