@@ -6,8 +6,9 @@ type Item = {
   image: string;
   title: string;
   description: string;
-  details: string;
+  date: string;
   link: string;
+  tags: string;
 };
 
 function PortfolioPage() {

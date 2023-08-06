@@ -6,8 +6,9 @@ type Item = {
   image: string;
   title: string;
   description: string;
-  details: string;
+  date: string;
   link: string;
+  tags: string;
 };
 
 function ProjectPage() {
@@ -27,7 +28,10 @@ function ProjectPage() {
     <div>
       <img src={item.image} />
       <h1>{item.title}</h1>
+      <p>{item.date}</p>
       <p>{item.description}</p>
+      <a href={item.link} target="_blank" rel="noopener noreferrer">link</a>
+      <p>{item.tags}</p>
       {/* More item details here */}
     </div>
   );
