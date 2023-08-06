@@ -25,7 +25,7 @@ function PortfolioPage() {
     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem' }}>
       {items.map((item, index) => (
         <div key={index} style={{ border: '1px solid #ddd', padding: '1rem' }}>
-          <img src={item.image} alt={item.title} style={{ width: '100%', height: 'auto' }} />
+          <img src={item.image} style={{ width: '100%', height: 'auto' }} />
           <h2>{item.title}</h2>
           <Link to={`/work/${item.id}`}>Learn More</Link>
         </div>

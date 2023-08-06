@@ -25,7 +25,7 @@ function ProjectPage() {
 
   return (
     <div>
-      <img src={item.image} alt={item.title} />
+      <img src={item.image} />
       <h1>{item.title}</h1>
       <p>{item.description}</p>
       {/* More item details here */}

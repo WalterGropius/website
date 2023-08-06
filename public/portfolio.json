@@ -1,45 +1,218 @@
 [
-    {
-      "id": 1,
-      "title": "Project One",
-      "image": "https://images.unsplash.com/photo-1542744095-291d1f67b221?auto=format&fit=crop&w=200&q=80",
-      "details": "Detailed information about Project One...",
-      "link": "https://projectone.com"
-    },
-    {
-      "id": 2,
-      "title": "Project Two",
-      "image": "https://images.unsplash.com/photo-1583508915901-b5f84c1dcde1?auto=format&fit=crop&w=200&q=80",
-      "details": "Detailed information about Project Two...",
-      "link": "https://projecttwo.com"
-    },
-    {
-      "id": 3,
-      "title": "Project Three",
-      "image": "https://images.unsplash.com/photo-1542744095-291d1f67b221?auto=format&fit=crop&w=200&q=80",
-      "details": "Detailed information about Project Three...",
-      "link": "https://projectthree.com"
-    },
-    {
-      "id": 4,
-      "title": "Project Four",
-      "image": "https://images.unsplash.com/photo-1583508915901-b5f84c1dcde1?auto=format&fit=crop&w=200&q=80",
-      "details": "Detailed information about Project Four...",
-      "link": "https://projectfour.com"
-    },
-    {
-      "id": 5,
-      "title": "Project Five",
-      "image": "https://images.unsplash.com/photo-1542744095-291d1f67b221?auto=format&fit=crop&w=200&q=80",
-      "details": "Detailed information about Project Five...",
-      "link": "https://projectfive.com"
-    },
-    {
-      "id": 6,
-      "title": "Project Six",
-      "image": "https://images.unsplash.com/photo-1583508915901-b5f84c1dcde1?auto=format&fit=crop&w=200&q=80",
-      "details": "Detailed information about Project Six...",
-      "link": "https://projectsix.com"
-    }
-  ]
-  
+  {
+    "id": 16,
+    "title": "Cpt. Demo EP",
+    "description": "I made this EP cover with GIMP",
+    "link": "https://open.spotify.com/album/1V3m6SMvu8Bodq4scdqD3o",
+    "date": "October 1, 2021",
+    "tags": "Graphic Design"
+  },
+  {
+    "id": 11,
+    "title": "Jan Kaláb sculpture",
+    "description": "I made a 3d model to preview a sculpture and prepare it for cnc milling",
+    "link": "https://sketchfab.com/models/e136d0a11db84dddb65485134a39ffbb",
+    "date": "July 18, 2020",
+    "tags": "3D modeling, Implementation Support"
+  },
+  {
+    "id": 9,
+    "title": "Epos 257 - vanitas",
+    "description": "I made an NFT replica of a sculpture for Epos 257",
+    "link": "https://sketchfab.com/models/829cdf10a68e4b2d80ee3d53ffc0a75d",
+    "date": "June 18, 2020",
+    "tags": "NFT"
+  },
+  {
+    "id": 12,
+    "title": "Mančuška VR exhibit",
+    "description": "VR gallery exposition of A gap by J. Mančuška for Viktor Takač",
+    "link": "http://blokmagazine.com/a-gap-by-jan-mancuska-at-hunt-kastner-gallery/",
+    "date": "June 18, 2021",
+    "tags": "Implementation Support, VR"
+  },
+  {
+    "id": 14,
+    "title": "Adrex advertisement",
+    "description": "Vfx commerical (UE4 + AE) i made with http://oldrich.rocks",
+    "link": "https://photos.app.goo.gl/PBZs6EegBARX3aPa7",
+    "date": "July 15, 2021",
+    "tags": "VFX"
+  },
+  {
+    "id": 15,
+    "title": "Vlak LED screen UE4 support",
+    "description": "Virtual production on czech feature film with VFXR",
+    "link": "https://www.youtube.com/watch?v=kpt_ltLziek",
+    "date": "July 23, 2021",
+    "tags": "Implementation Support, VFX, VP"
+  },
+  {
+    "id": 13,
+    "title": "Hotdog Shooter",
+    "description": "",
+    "link": "",
+    "date": "June 18, 2021",
+    "tags": "Game Design, VR"
+  },
+  {
+    "id": 21,
+    "title": "Kevin Gates mv VFX",
+    "description": "Unreal VP, Mocha pro facetrack",
+    "link": "",
+    "date": "March 16, 2022",
+    "tags": "VFX"
+  },
+  {
+    "id": 10,
+    "title": "ALIENDIESEL spotify artwork",
+    "description": "",
+    "link": "",
+    "date": "June 18, 2020",
+    "tags": "Graphic Design"
+  },
+  {
+    "id": 18,
+    "title": "Cpt. Demo EP",
+    "description": "made another EP cover for čardáš",
+    "link": "",
+    "date": "November 17, 2021",
+    "tags": "Graphic Design"
+  },
+  {
+    "id": 25,
+    "title": "2MEDIA website",
+    "description": "2media website r3f",
+    "link": "",
+    "date": "October 13, 2022",
+    "tags": "Web Design"
+  },
+  {
+    "id": 17,
+    "title": "Cpt. Demo LP",
+    "description": "Nobel Prize replica",
+    "link": "",
+    "date": "November 8, 2021",
+    "tags": "Graphic Design"
+  },
+  {
+    "id": 23,
+    "title": "Burian LP GFX",
+    "description": "EP cover designs",
+    "link": "",
+    "date": "July 14, 2022",
+    "tags": "Graphic Design"
+  },
+  {
+    "id": 24,
+    "title": "Johnny Majestic MV WAOA-GRADING and VFX",
+    "description": "Color grading and virtual horse",
+    "link": "",
+    "date": "August 18, 2022",
+    "tags": "VFX"
+  },
+  {
+    "id": 19,
+    "title": "Cpt. Demo music video vfx",
+    "description": "Unreal, BLender, Davinci",
+    "link": "",
+    "date": "December 15, 2021",
+    "tags": "VFX"
+  },
+  {
+    "id": 20,
+    "title": "CPT. Demo CNN Prima SHOWTIME reportage",
+    "description": "Unreal VP",
+    "link": "",
+    "date": "January 9, 2022",
+    "tags": "VFX"
+  },
+  {
+    "id": 22,
+    "title": "HPNOVERSE VFX",
+    "description": "VFX, motion tracking, unreal VP",
+    "link": "",
+    "date": "July 13, 2022",
+    "tags": "VFX"
+  },
+  {
+    "id": 5,
+    "title": "CIEXPO",
+    "description": "",
+    "link": "",
+    "date": "February 7, 2018",
+    "tags": "3D modeling, AR, Game Design, Implementation Support, VR"
+  },
+  {
+    "id": 7,
+    "title": "ARROW",
+    "description": "Custom branded teambuidling VR archery game featuring boids programmed from scratch",
+    "link": "",
+    "date": "February 16, 2018",
+    "tags": "3D modeling, Game Design, VR"
+  },
+  {
+    "id": 4,
+    "title": "Bee Game",
+    "description": "Educational VR game for kids about the life of a bee",
+    "link": "",
+    "date": "January 19, 2018",
+    "tags": "3D modeling, Game Design, VR"
+  },
+  {
+    "id": 8,
+    "title": "VR and AR for Real estate",
+    "description": "",
+    "link": "https://svoboda-williams.com/realitni-zpravy/232-rozsirena-realita-jako-novy-zpusob-prezentace-nemovitosti",
+    "date": "January 1, 2019",
+    "tags": "3D modeling, Game Design, VR, Video"
+  },
+  {
+    "id": 1,
+    "title": "ŽIDLICKÝ VR gallery",
+    "description": "",
+    "link": "",
+    "date": "April 13, 2016",
+    "tags": "VR"
+  },
+  {
+    "id": 2,
+    "title": "Military factory presentation for Indonesian Gvt.",
+    "description": "",
+    "link": "",
+    "date": "February 16, 2017",
+    "tags": "3D modeling, AR, VR, Video"
+  },
+  {
+    "id": 6,
+    "title": "fancy AR tests",
+    "description": "",
+    "link": "",
+    "date": "February 16, 2018",
+    "tags": "AR"
+  },
+  {
+    "id": 3,
+    "title": "BANK renders and VR",
+    "description": "",
+    "link": "",
+    "date": "June 18, 2017",
+    "tags": "3D modeling, VR"
+  },
+  {
+    "id": 26,
+    "title": "WIP trust perfumes website",
+    "description": "r3f",
+    "link": "",
+    "date": "March 7, 2023",
+    "tags": "3D modeling, Graphic Design, Web Design"
+  },
+  {
+    "id": 27,
+    "title": "numinos VR timetravel",
+    "description": "varied work for Numinos VR timetravel as Tech artist, RnD dev, Render in Unreal Engine",
+    "link": "http://numinos.one/",
+    "date": "March 14, 2023",
+    "tags": "3D modeling, Game Design, Implementation Support, Rendering, VR"
+  }
+]
