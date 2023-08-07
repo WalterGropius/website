@@ -1,7 +1,7 @@
 /* Reset some default styles */
 @font-face {
   font-family: 'ZenHand';
-  src: url('zenhand2.ttf') format('truetype');
+  src: url('zenhand3.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -17,7 +17,7 @@
 :root {
   font-size: 2vh;
   --color-text: #e0e0e0;
-  --color-bg: #c1a1c9;
+  --color-bg: #14001a;
   --color-link: #fff;
   --color-link-hover: #fff;
 }
@@ -42,10 +42,10 @@ body, html {
   padding: 0;
 }
 
-/* Header styles */
+
 img {
   opacity: 0.9;
-  margin: 5vh 2vh;
+  margin: 1vh 1vh;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -63,7 +63,7 @@ nav {
   padding: 1rem 0;
   z-index: 100;
   transition: opacity 0.5s ease;
-  opacity: 0.2;
+  opacity: 0.3;
 }
 
 nav:hover {
@@ -140,8 +140,4 @@ nav a:hover, a:hover {
 
 /* Responsive design */
 
-@media screen and (max-width: 768px) {
-  nav {
-    color: #ffffff;
-  }
-}
+
