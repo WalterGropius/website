@@ -19,21 +19,22 @@ const Profile = () => {
 const ProfileHeader = () => (
     <div className="profile-header">
         <h1>Eliáš Bauer</h1>
-        <h2>creative dev</h2>
+        <h2>creative dev</h2><br />
     </div>
 );
 
 const SummarySection = () => (
     <section className="summary-section">
-        <h2>Core Values:</h2>
-        <div className="values-list">
-            {['WONDER', 'TECHNOLOGY', 'COLLABORATE', 'VR', 'NATURE', 'CREATIVITY', 'CURIOSITY', 'AI', 'VISUAL', 'MARKETING', 'HONESTY', 'AR', 'SUSTAINABILITY', 'VISION', 'ARTS', 'HUMANITY', 'FILM', 'AWE', 'ARCHITECTURE', 'SKATEBOARDING', 'MUSIC', 'ZEN'].map(value => (
-                <span key={value} className="value-item">{value}</span>
-            ))}
-        </div>
         <p>
-            With a profound respect for the synergy between art and technology, I've dedicated my career to being a bridge between creative visions and technical execution. Whether supporting artists in realizing their concepts or guiding technologists towards aesthetic refinement, my passion lies at the crossroads of imagination and innovation.
-        </p>
+            I am a lifelong learner, driven by boundless curiosity with a profound passion for the synergy between art and technology.<br />
+            I've dedicated my career to being a bridge between creative visions and technical execution.<br />
+            Whether supporting artists in realizing their concepts or guiding technologists towards aesthetic refinement, my passion lies at the crossroads of imagination and innovation.<br />
+             My journey has equipped me with expertise in VR/AR development and real-time digital cinematography and virtual production, primarily within the Unreal engine.<br />
+             I've been fortunate to work with both artistic and technical minds, continually learning the importance of aesthetics and user experience.<br />
+             I view every collaboration as an opportunity to bridge the gap between visionary creativity and pragmatic technology.<br />
+
+
+        </p><br />
     </section>
 );
 
@@ -46,7 +47,7 @@ const TechnicalProficiencies = () => (
             <li>Blender</li>
             <li>Substance Suite</li>
             {/* Add more as necessary */}
-        </ul>
+        </ul><br />
     </section>
 );
 
@@ -57,7 +58,7 @@ const Languages = () => (
             <li>English</li>
             <li>Czech</li>
             <li>French</li>
-            <li>Assembly, Cpp, Python, Arduino, Lojban</li>
+            <li>Assembly, Cpp, Python, Arduino, Lojban</li><br />
             {/* Add more if necessary */}
         </ul>
     </section>
@@ -68,7 +69,7 @@ const Certifications = () => (
         <h2>Certifications</h2>
         <ul>
             <li>C++ Course SL</li>
-            <li>C# Course SL</li>
+            <li>C# Course SL</li><br />
             {/* Add more as necessary */}
         </ul>
     </section>
@@ -82,7 +83,7 @@ const Education = () => (
             137.5 Degrees, lmgtfy, Computers, Architecture, Art, and more (2006)<br />
             LYCÉE FRANCAIS DE PRAGUE<br />
             Baccalaureat Scientifique (2005 - 2013)
-        </div>
+        </div><br />
     </section>
 );
 
@@ -92,15 +93,16 @@ const PortfolioHighlights = () => (
         <ul>
             <li>Lenticular promo for Selam X</li>
             {/* Add more projects as necessary */}
-        </ul>
+        </ul><br />
     </section>
 );
 
 const PersonalNote = () => (
     <section className="personal-note-section">
         <p>
+        <h2>Note</h2>
             I'm always eager to collaborate and bring new visions to life. Let's embark on the next creative journey together.
-        </p>
+        </p><br />
     </section>
 );
 
