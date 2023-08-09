@@ -1,13 +1,17 @@
 import React from 'react';
-
+import ImageCarousel from './ImageCarousel';
+const images = [
+  "/image01.png",
+  "/image02.png",
+  // ... more images
+];
 const ArtPage: React.FC = () => {
   return (
-    
-      <embed
-  src="https://zenbau.haus/portfolio.pdf#toolbar=0&navpanes=0&view=FitH"
-  width="100%" height="100%" />
-
-  );
+    <div>
+        <h1>My Carousel</h1>
+        <ImageCarousel images={images} />
+    </div>
+);
 }
 
 export default ArtPage;

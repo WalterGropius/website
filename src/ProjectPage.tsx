@@ -33,7 +33,7 @@ function ProjectPage() {
         alignItems: 'center', // Center-align the content horizontally
       }}
     >
-      <a href={item.link} target="_blank" rel="noopener noreferrer">
+      <a href={item.link || '/work'} target="_blank" rel="noopener noreferrer">
         <img src={item.image} style={{ maxWidth: '100%', height: 'auto' }} />
       </a>
       <h1>{item.title}</h1>
