@@ -1,5 +1,15 @@
 import { useState, useEffect } from 'react';
 
+type Item = {
+    id: number;
+    image: string;
+    title: string;
+    description: string;
+    date: string;
+    link: string;
+    tags: string;
+  };
+
 const CVPage = () => {
     return (
         <div className="profile-container">
@@ -87,8 +97,7 @@ const Education = () => (
 );
 
 const PortfolioHighlights = () => {
-  const [items, setItems] = useState([]);
-
+    const [items, setItems] = useState<Item[]>([]);
   useEffect(() => {
       // Fetch data from portfolio.json
       fetch('/portfolio.json')

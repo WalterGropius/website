@@ -27,7 +27,7 @@ function PortfolioPage() {
       style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', // Corrected the gridTemplateColumns property
-        gap: '1rem',
+        gap: '5rem',
          // Limiting the maximum width of the grid container to 1250px
         margin: '0 auto', // Centering the grid container horizontally
       }}
