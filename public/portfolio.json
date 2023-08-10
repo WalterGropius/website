@@ -11,7 +11,7 @@
   {
     "id": 11,
     "image": "/image27.png",
-    "title": "Jan Kaláb sculpture",
+    "title": "Jan Kaláb 3d support",
     "description": "I made a 3d model to preview a sculpture and prepare it for cnc milling",
     "date": "July 18, 2020",
     "link": "https://sketchfab.com/models/e136d0a11db84dddb65485134a39ffbb",
@@ -20,7 +20,7 @@
   {
     "id": 9,
     "image": "/image17.png",
-    "title": "Epos 257 - vanitas",
+    "title": "Epos 257 - Vanitas",
     "description": "I made an NFT replica of a sculpture for Epos 257",
     "date": "June 18, 2020",
     "link": "https://sketchfab.com/models/829cdf10a68e4b2d80ee3d53ffc0a75d",
@@ -30,7 +30,7 @@
     "id": 12,
     "image": "/image34.png",
     "title": "Mančuška VR exhibit",
-    "description": "VR gallery exposition of A gap by J. Mančuška for Viktor Takač",
+    "description": "VR gallery exposition of A gap by J. Mančuška for Viktor Takač with viewer analytics",
     "date": "June 18, 2021",
     "link": "http://blokmagazine.com/a-gap-by-jan-mancuska-at-hunt-kastner-gallery/",
     "tags": "Implementation Support, VR"
@@ -39,7 +39,7 @@
     "id": 14,
     "image": "/image02.png",
     "title": "Adrex advertisement",
-    "description": "Vfx commerical (UE4 + AE) i made with http://oldrich.rocks",
+    "description": "Vfx commerical ( UE4 + AE ) i made with oldrich",
     "date": "July 15, 2021",
     "link": "https://photos.app.goo.gl/PBZs6EegBARX3aPa7",
     "tags": "VFX"
@@ -57,7 +57,7 @@
     "id": 13,
     "image": "/image19.png",
     "title": "Hotdog Shooter",
-    "description": "",
+    "description": "collaboration with student of Game Design",
     "date": "June 18, 2021",
     "link": "",
     "tags": "Game Design, VR"
@@ -74,8 +74,8 @@
   {
     "id": 10,
     "image": "/image03.png",
-    "title": "ALIENDIESEL spotify artwork",
-    "description": "",
+    "title": "ALIENDIESEL EP",
+    "description": "spotify artwork made with blender,ue and substance",
     "date": "June 18, 2020",
     "link": "",
     "tags": "Graphic Design"
@@ -95,7 +95,7 @@
     "title": "2MEDIA website",
     "description": "2media website r3f",
     "date": "October 13, 2022",
-    "link": "",
+    "link": "/test",
     "tags": "Web Design"
   },
   {
@@ -111,7 +111,7 @@
     "id": 23,
     "image": "/image08.png",
     "title": "Burian LP GFX",
-    "description": "EP cover designs",
+    "description": "cover artwork",
     "date": "July 14, 2022",
     "link": "",
     "tags": "Graphic Design"
@@ -119,8 +119,8 @@
   {
     "id": 24,
     "image": "/image28.png",
-    "title": "Johnny Majestic MV WAOA-GRADING and VFX",
-    "description": "Color grading and virtual horse",
+    "title": "Johnny Majestic mv",
+    "description": "Color grading and virtual horse VFX",
     "date": "August 18, 2022",
     "link": "",
     "tags": "VFX"
@@ -128,7 +128,7 @@
   {
     "id": 19,
     "image": "/image16.png",
-    "title": "Cpt. Demo music video vfx",
+    "title": "Cpt. Demo mv vfx",
     "description": "Unreal, BLender, Davinci",
     "date": "December 15, 2021",
     "link": "",
@@ -156,7 +156,7 @@
     "id": 5,
     "image": "/image09.png",
     "title": "CIEXPO",
-    "description": "",
+    "description": "http://ciexpo.cz",
     "date": "February 7, 2018",
     "link": "",
     "tags": "3D modeling, AR, Game Design, Implementation Support, VR"
@@ -182,8 +182,8 @@
   {
     "id": 8,
     "image": "",
-    "title": "VR and AR for Real estate",
-    "description": "",
+    "title": "VR and AR for Svoboda Williams",
+    "description": "case study for VR and AR in real estate",
     "date": "January 1, 2019",
     "link": "https://svoboda-williams.com/realitni-zpravy/232-rozsirena-realita-jako-novy-zpusob-prezentace-nemovitosti",
     "tags": "3D modeling, Game Design, VR, Video"
@@ -192,7 +192,7 @@
     "id": 1,
     "image": "/image41.png",
     "title": "ŽIDLICKÝ VR gallery",
-    "description": "",
+    "description": "first virtual gallery in central Europe :D",
     "date": "April 13, 2016",
     "link": "",
     "tags": "VR"
@@ -201,7 +201,7 @@
     "id": 2,
     "image": "/image35.png",
     "title": "Military factory presentation for Indonesian Gvt.",
-    "description": "",
+    "description": "VR+AR",
     "date": "February 16, 2017",
     "link": "",
     "tags": "3D modeling, AR, VR, Video"
@@ -210,7 +210,7 @@
     "id": 6,
     "image": "/image18.png",
     "title": "fancy AR tests",
-    "description": "",
+    "description": "early Unity tests with Lucas Saidl",
     "date": "February 16, 2018",
     "link": "",
     "tags": "AR"
@@ -219,7 +219,7 @@
     "id": 3,
     "image": "/image05.png",
     "title": "BANK renders and VR",
-    "description": "",
+    "description": "Unreal, BLender, Substance",
     "date": "June 18, 2017",
     "link": "",
     "tags": "3D modeling, VR"

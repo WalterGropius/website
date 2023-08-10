@@ -9,9 +9,9 @@
 }
 
 :root {
-  font-size: 2vh;
-  --color-text: #919191;
-  --color-bg: #222222;
+  font-size: 2.5vh;
+  --color-text: #ffffff;
+  --color-bg: #000000;
   --color-link: #e0e0e0;
   --color-link-hover: #fff;
 }
