@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 type Item = {
     id: number;
@@ -117,7 +118,7 @@ const PortfolioHighlights = () => {
           <ul>
               {items.map(item => (
                   <li key={item.id}>
-                      <a href={`/work/${item.id}`}>{item.title}</a>
+                     <Link to={`/work/${item.id}`}>{item.title}</Link>
                   </li>
               ))}
           </ul>
