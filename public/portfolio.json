@@ -200,8 +200,8 @@
   {
     "id": 2,
     "image": "/image35.png",
-    "title": "Military factory presentation for Indonesian Gvt.",
-    "description": "VR+AR",
+    "title": "Excalibur",
+    "description": "VR+AR Military factory presentation for Indonesian Gvt.",
     "date": "February 16, 2017",
     "link": "",
     "tags": "3D modeling, AR, VR, Video"
@@ -209,7 +209,7 @@
   {
     "id": 6,
     "image": "/image18.png",
-    "title": "fancy AR tests",
+    "title": "old fancy AR tests",
     "description": "early Unity tests with Lucas Saidl",
     "date": "February 16, 2018",
     "link": "",

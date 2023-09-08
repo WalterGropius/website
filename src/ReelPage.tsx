@@ -6,7 +6,7 @@ const ReelPage: React.FC = () => {
   return (
     <>
     <video 
-      src="https://zenbau.haus/reel_sm.mp4" 
+      src="https://zenbau.haus/reel.mp4" 
       style={{width: '100%', height: '100vh', objectFit: 'cover', border: 'none'}}
       title="reel" 
       autoPlay 
