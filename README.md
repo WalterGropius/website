@@ -1,27 +1,25 @@
-# React + TypeScript + Vite
+# Eli's React TypeScript Portfolio Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to Eli's React TypeScript Portfolio Template! 🚀
 
-Currently, two official plugins are available:
+![Portfolio Preview](https://zenbau.haus/image19.jpg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
 
-## Expanding the ESLint configuration
+This is a meticulously crafted, high-performance website portfolio template powered by React, TypeScript, Vite, and the incredible react-three-fiber library. Whether you're an artist, developer, or enthusiast, this template will help you showcase your work in a stunning and interactive way.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+- **Cutting-Edge Tech Stack**: We've used the latest tools and libraries to ensure top-notch performance and maintainability.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- **3D Visualization**: Thanks to react-three-fiber, you can incorporate 3D elements seamlessly into your portfolio.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **Smooth Animations**: The power of react-spring and react-three-fiber brings your portfolio to life with fluid animations.
+
+- **Responsive Design**: Your portfolio will look amazing on all devices, from desktops to smartphones.
+
+- **Routing**: Utilizes react-router-dom for easy navigation within your portfolio.
+
+- **Slick Carousel**: Showcase your projects with style using the react-slick carousel.
+
+- **Styled Components**: Leverage styled-components to create beautiful, maintainable CSS-in-JS styles.
