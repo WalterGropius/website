@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "zenbauhaus",
+  "private_key_id": "9543ed248bdc16a46d428e02b48b525548ba5bb5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDJtBwe1dvoDs23\ncID8f8S1guXijfElv4WRlHuQvxaEYb+wJ+RKpgeWqhD6D7LfXsinM4GHXml7Fy8/\nMdJwvQUqVjQr13qFXaNT/k83Q9BerSU71V43paw62hJUucPZ3sK/xl1fEdJJfkIe\nzUj2knW+XS/JzNbHN/1p0RKGmJhP8M+yjIK91Fx9WjvCKXfYWS3rFdg5gMTFIj8I\nDaczOXFl25Qsi5Nk7/3Yo4+nFeRKYmKrQ6Wjv3YK2/JO1mMElW2VM0waZwN+uuNt\ndRH3PbqrtlIHhN1iFitP4G3vP2RrrSFsrOwPYfJqtdBFWrE2sDqdQ/IEMP+xRdWY\n2EjO0KyrAgMBAAECggEAYG6kLRfYqZL+Ri/a8x0QyijZSF3NR1tP/ABtrQ+2r7be\nAtWnnwrOwPjw4eTEg2dY7htBV5tLOcalV4S11CGCiTGqgrVjxcQ1VHBWphjdU45b\nKUaC437pHz/oGKqxmIWYPUCUnmGyVGGxMfG6auwtr8P0l3m/y4IYvVDwFvp4g2rH\n6AkMcYh+BM0sl3OKLJon8RIPPudEGKUTnTXd67bsARPidNnBLdWLQiem/GLDUcp3\nXJBLGqkFkqs0lqiRPA4jhxlQjPXoSpaaRnzcdUv6cjRH9dA4mv1fMfT4ox085IQr\n4WJHoHv5nX3wfkO2Y68bA6/4NitFh7VDfr/84kd67QKBgQDxsbgoczHigKMsk+D5\nPooisfW9C7WWr8rucmTeJtwyAXyXP26q/0fq4luAdenJ0OLn/OuTGxFKGle2kVDX\nx2wo1cjLOVI2lJpEZECo0XcfDCPsr06noZfFEHq8BREsZhys0Op5ueYJbFn71Nvq\nZwaXe3NXcFTC98iOWDr4LZfKNQKBgQDVpG4zuwPv415rTz3bCStFc7L/71SktvNl\nf6HKVqvoGnEbC2pSh77vJkA011L4+bOx+FekX1QrGbnVV2gGZy7JeGduHRO6YlHE\neekd1+/H4pibr3IqTa3Qot7xgjRlR54a5H/k8DogBporm6uQzjRKucO6YT2T/S/p\nLppaIkZ3XwKBgDuLf0Vn6/hTnN/Upu6A++NEWLh0dA5lzOcmA7e/dyxStXFFzWwP\nbJZvof9qDWkNL3ncE+WwG3hYORffgT1IAlulH80BmEGeJsuGr29n+6MIiKk9H3Gp\nHA0O3E4KKYr4tUPWTI4kwIm9ygWDEZMUQsl7PpViNV+7UAvRrOWLxgOpAoGBAInZ\nql3oqvarn+3f2IqvlOMgb3xiwhvyDIUOYKe9WvjNrvODXxxXiKSo6r7tvRT3kbIh\nCvP9qsKQu+7jkjSneXH4JczQKD2YWShMfVWLUqWIGW5DO4f+TUwU+4ObvxEmr+as\nT7W6J9coS2wd6wrpcqZQzPFC80e9E6ADOQc1nIBDAoGAAjjJhwQ9i2yYGsDcn4de\nRtxNIqpbtd9/0jC5fqzCBtY646zcclfiSBWa+56D79NTG+duvgKiQt/mUsrXI4Xu\nG0u7hDEjwzIOvVnPoB6rZgzYaw5hBvMSpMzIBGeWf3eEK21rFyJn6FN0dtVeFx8a\ndbMOoNBDiLxcIV8ahVhnfrg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "admini@zenbauhaus.iam.gserviceaccount.com",
+  "client_id": "105979747584975929117",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/admini%40zenbauhaus.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

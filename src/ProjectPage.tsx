@@ -1,13 +1,14 @@
 import  { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 type Item = {
   id: number;
   image: string;
   title: string;
   description: string;
-  details: string;
+  date: string;
   link: string;
+  tags: string;
 };
 
 function ProjectPage() {
@@ -24,10 +25,23 @@ function ProjectPage() {
   if (!item) return <div>Loading...</div>;
 
   return (
-    <div>
-      <img src={item.image} alt={item.title} />
+    <div
+      style={{
+        width: '100%', // Set the width to 100% to make it full-width
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center', // Center-align the content horizontally
+      }}
+    >
+      <Link to={item.link || "/work"} rel="noopener noreferrer">
+
+        <img src={item.image} style={{ maxWidth: '100%', height: 'auto' }} />
+      </Link>
       <h1>{item.title}</h1>
+      <p>{item.date}</p>
       <p>{item.description}</p>
+      <p>{item.tags}</p>
+      <Link to={"/work"}>Back</Link>
       {/* More item details here */}
     </div>
   );

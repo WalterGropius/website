@@ -6,8 +6,9 @@ type Item = {
   image: string;
   title: string;
   description: string;
-  details: string;
+  date: string;
   link: string;
+  tags: string;
 };
 
 function PortfolioPage() {
@@ -22,12 +23,23 @@ function PortfolioPage() {
   }, []);
 
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem' }}>
+    
+    <div
+      style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', // Corrected the gridTemplateColumns property
+        gap: '5rem',
+         // Limiting the maximum width of the grid container to 1250px
+        margin: '0 auto', // Centering the grid container horizontally
+      }}
+    >
       {items.map((item, index) => (
-        <div key={index} style={{ border: '1px solid #ddd', padding: '1rem' }}>
-          <img src={item.image} alt={item.title} style={{ width: '100%', height: 'auto' }} />
-          <h2>{item.title}</h2>
-          <Link to={`/work/${item.id}`}>Learn More</Link>
+        <div key={index} style={{ padding: '1rem' }}>
+          <Link to={`/work/${item.id}`}>
+            <img src={item.image} style={{ width: '100%', height: '50%', objectFit: 'cover' }} />
+            <h2>{item.title}</h2>
+            <p>{item.description}</p>
+          </Link>
         </div>
       ))}
     </div>
