@@ -23,6 +23,7 @@ function PortfolioPage() {
   }, []);
 
   return (
+    
     <div
       style={{
         display: 'grid',

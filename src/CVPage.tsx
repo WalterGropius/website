@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+/* import { Canvas } from '@react-three/fiber';
+import { Environment } from '@react-three/drei'; */
 
 type Item = {
     id: number;
@@ -13,19 +15,26 @@ type Item = {
 
 const CVPage = () => {
     return (
-        <div className="profile-container">
+        <div >
+            {/* <Canvas >
+            <Environment files={"/flatway2k.hdr"} background blur={0.04}/>
+            </Canvas> */}
+            <div className="profile-container">
             <ProfileHeader />
             <SummarySection />
             <Group1/>
             <Group2/>
+            
+            </div>
         </div>
     );
 };
 
 const ProfileHeader = () => (
     <div className="profile-header">
-        <h1>Eliáš Bauer</h1>
-        <h2>creative dev</h2><br />
+        <br />
+        <h2>Eliáš Bauer</h2>
+        <h3>creative dev</h3>
     </div>
 );
 

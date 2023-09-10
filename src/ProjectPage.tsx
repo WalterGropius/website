@@ -36,7 +36,7 @@ function ProjectPage() {
       <Link to={item.link || "/work"} rel="noopener noreferrer">
 
         <img src={item.image} style={{ maxWidth: '100%', height: 'auto' }} />
-      </a>
+      </Link>
       <h1>{item.title}</h1>
       <p>{item.date}</p>
       <p>{item.description}</p>

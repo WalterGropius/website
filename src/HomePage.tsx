@@ -82,10 +82,11 @@ function Model({ open, hinge, ...props }: ModelProps) {
 
   const video = useMemo(() => {
     const vid = document.createElement('video');
-    vid.src = '/reel_sm.mp4';
+    vid.src = '/reel_480.mp4';
     vid.crossOrigin = 'Anonymous';
     vid.loop = true;
     vid.muted = true;
+  
     vid.play();
     return vid;
   }, []);
@@ -156,6 +157,7 @@ export default function HomePage() {
                 <Model open={open} hinge={props.open.to([0, 1], [1.575, -0.425])} />
             </group>
         </Suspense>
+        <pointLight color={"#fffaea"} position={[0, 5, 0]} intensity={0.1} />
         <Environment files={"/flatway2k.hdr"} background blur={0.04}/>
      {/* <ContactShadows position={[0, -4.5, 0]} opacity={0.4} scale={20} blur={1.75} far={4.5} />*/}
      <OrbitControls minDistance={10} maxDistance={20} enablePan={false} minPolarAngle={0} maxPolarAngle={Math.PI / 2} />
