@@ -6,7 +6,8 @@ Welcome to Eli's React TypeScript Portfolio Template! 🚀
 
 ## Overview
 
-This is a meticulously crafted, high-performance website portfolio template powered by React, TypeScript, Vite, and the incredible react-three-fiber library. Whether you're an artist, developer, or enthusiast, this template will help you showcase your work in a stunning and interactive way.
+Portfolio template powered by React, TypeScript, Vite, and the incredible react-three-fiber library.
+Whether you're an artist, developer, or enthusiast, this template will help you showcase your work in a stunning and interactive way.
 
 ## Features
 
