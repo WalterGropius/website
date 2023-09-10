@@ -2,7 +2,7 @@
 
 Welcome to Eli's React TypeScript Portfolio Template! 🚀
 
-![Portfolio Preview](https://zenbau.haus/image19.jpg)
+![Portfolio Preview](https://zenbau.haus/prev.png)
 
 ## Overview
 
