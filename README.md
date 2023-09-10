@@ -10,7 +10,7 @@ This is a meticulously crafted, high-performance website portfolio template powe
 
 ## Features
 
-- **Cutting-Edge Tech Stack**: We've used the latest tools and libraries to ensure top-notch performance and maintainability.
+- **Cutting-Edge Tech Stack**: I've used the latest tools and libraries to ensure top-notch performance and maintainability.
 
 - **3D Visualization**: Thanks to react-three-fiber, you can incorporate 3D elements seamlessly into your portfolio.
 
