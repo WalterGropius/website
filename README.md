@@ -23,3 +23,42 @@ This is a meticulously crafted, high-performance website portfolio template powe
 - **Slick Carousel**: Showcase your projects with style using the react-slick carousel.
 
 - **Styled Components**: Leverage styled-components to create beautiful, maintainable CSS-in-JS styles.
+
+##Installation:
+
+1. Clone this repository to your local machine using the following command:
+   ```git clone https://github.com/WalterGropius/website.git```
+
+2. Navigate to the project directory by running:
+   ```cd website```
+
+3. Install the necessary dependencies with:
+   ```npm install```
+
+4. Start the development server:
+   ```npm run dev```
+
+### Configuration
+
+Customize your portfolio by editing the files in the `src` directory. You can easily add your projects, update content, and modify the styling to suit your personal brand.
+
+### Deployment
+
+To deploy your portfolio to a hosting service of your choice, follow these steps:
+
+1. Build your project for production by running:
+```npm run build```
+
+2. Once the build is complete, you'll find the optimized production files in the `dist` directory.
+
+3. Upload the contents of the `dist` directory to your hosting server.
+
+4. Configure your hosting environment to serve the `index.html` file as the entry point for your portfolio.
+
+5. Your portfolio is now live and accessible via your hosting provider's URL.
+
+6. Dont forget to configure .htaccess for proper routing and https
+
+7. Get an SSL for the aforementioned.
+
+
