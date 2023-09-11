@@ -1,4 +1,4 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 type Item = {
@@ -14,23 +14,31 @@ type Item = {
 function PortfolioPage() {
   const [items, setItems] = useState<Item[]>([]);
 
-  // Fetch your items from your JSON file on component mount
+  // Function to shuffle an array using the Fisher-Yates shuffle
+  function shuffleArray(array: Item[]) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1)); // Random index from 0 to i
+      [array[i], array[j]] = [array[j], array[i]];  // Swap elements
+    }
+  }
+
   useEffect(() => {
     fetch('/portfolio.json')
       .then(response => response.json())
-      .then((data: Item[]) => setItems(data))
+      .then((data: Item[]) => {
+        shuffleArray(data);  // Shuffle the array before setting it
+        setItems(data);
+      })
       .catch(error => console.error('Error:', error));
   }, []);
 
   return (
-    
     <div
       style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', // Corrected the gridTemplateColumns property
+        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
         gap: '5rem',
-         // Limiting the maximum width of the grid container to 1250px
-        margin: '0 auto', // Centering the grid container horizontally
+        margin: '0 auto',
       }}
     >
       {items.map((item, index) => (
@@ -38,7 +46,8 @@ function PortfolioPage() {
           <Link to={`/work/${item.id}`}>
             <img src={item.image} style={{ width: '100%', height: '50%', objectFit: 'cover' }} />
             <h2>{item.title}</h2>
-            <p>{item.description}</p>
+            <p>{item.tags}</p>
+            <p>{item.date}</p>
           </Link>
         </div>
       ))}

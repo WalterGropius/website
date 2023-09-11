@@ -3,80 +3,80 @@
     "id": 16,
     "image": "/image14.png",
     "title": "Cpt. Demo EP",
-    "description": "I made this EP cover with GIMP",
-    "date": "October 1, 2021",
+    "description": "I made this EP cover with GIMP it was the beginning of a long and beautiful collaboration with Cpt. Demo",
+    "date": "October 2021",
     "link": "https://open.spotify.com/album/1V3m6SMvu8Bodq4scdqD3o",
     "tags": "Graphic Design"
   },
   {
     "id": 11,
     "image": "/image27.png",
-    "title": "Jan Kaláb 3d support",
-    "description": "I made a 3d model to preview a sculpture and prepare it for cnc milling",
-    "date": "July 18, 2020",
+    "title": "Jan Kaláb sculpture",
+    "description": "I made a 3d model in blender based on mockups and technical drawings to preview a sculpture and prepare it for cnc milling",
+    "date": "July 2020",
     "link": "https://sketchfab.com/models/e136d0a11db84dddb65485134a39ffbb",
-    "tags": "3D modeling, Implementation Support"
+    "tags": "3D, r&d"
   },
   {
     "id": 9,
     "image": "/image17.png",
     "title": "Epos 257 - Vanitas",
     "description": "I made an NFT replica of a sculpture for Epos 257",
-    "date": "June 18, 2020",
+    "date": "June 2020",
     "link": "https://sketchfab.com/models/829cdf10a68e4b2d80ee3d53ffc0a75d",
-    "tags": "NFT"
+    "tags": "3D,NFT"
   },
   {
     "id": 12,
     "image": "/image34.png",
     "title": "Mančuška VR exhibit",
     "description": "VR gallery exposition of A gap by J. Mančuška for Viktor Takač with viewer analytics",
-    "date": "June 18, 2021",
+    "date": "June 2021",
     "link": "http://blokmagazine.com/a-gap-by-jan-mancuska-at-hunt-kastner-gallery/",
-    "tags": "Implementation Support, VR"
+    "tags": "VR,r&d"
   },
   {
     "id": 14,
     "image": "/image02.png",
     "title": "Adrex advertisement",
-    "description": "Vfx commerical ( UE4 + AE ) i made with oldrich",
-    "date": "July 15, 2021",
+    "description": "Vfx/VP commerical i made with oldrich.rocks",
+    "date": "July 2021",
     "link": "https://photos.app.goo.gl/PBZs6EegBARX3aPa7",
-    "tags": "VFX"
+    "tags": "VFX,VP,r&d"
   },
   {
     "id": 15,
     "image": "/image37.png",
     "title": "Vlak LED screen UE4 support",
-    "description": "Virtual production on czech feature film with VFXR",
-    "date": "July 23, 2021",
+    "description": "Virtual production using gargantuous LED panels on czech feature film with VFXR",
+    "date": "July 2021",
     "link": "https://www.youtube.com/watch?v=kpt_ltLziek",
-    "tags": "Implementation Support, VFX, VP"
+    "tags": "VFX,VP,r&d"
   },
   {
     "id": 13,
     "image": "/image19.png",
     "title": "Hotdog Shooter",
-    "description": "collaboration with student of Game Design",
-    "date": "June 18, 2021",
+    "description": "playful collaboration with my student of Game Design, crowd system ai made from scratch",
+    "date": "June 2021",
     "link": "",
-    "tags": "Game Design, VR"
+    "tags": "Game Design,VR,r&d"
   },
   {
     "id": 21,
     "image": "/image31.png",
     "title": "Kevin Gates mv VFX",
-    "description": "Unreal VP, Mocha pro facetrack",
-    "date": "March 16, 2022",
-    "link": "",
-    "tags": "VFX"
+    "description": "realistic jaguar comped in realtime in Unreal using reprojected and relit geometry + Mocha pro facetrack",
+    "date": "March 2022",
+    "link": "https://www.youtube.com/watch?v=noh6BYgtTxQ&ab_channel=kevingatesTV",
+    "tags": "VFX,VP,r&d"
   },
   {
     "id": 10,
     "image": "/image03.png",
     "title": "ALIENDIESEL EP",
     "description": "spotify artwork made with blender,ue and substance",
-    "date": "June 18, 2020",
+    "date": "June 2020",
     "link": "",
     "tags": "Graphic Design"
   },
@@ -84,7 +84,7 @@
     "id": 18,
     "image": "/image13.png",
     "title": "Cpt. Demo EP",
-    "description": "made another EP cover for čardáš",
+    "description": "made another EP cover for čardáš in GIMP",
     "date": "November 17, 2021",
     "link": "",
     "tags": "Graphic Design"
@@ -93,26 +93,26 @@
     "id": 25,
     "image": "/image01.png",
     "title": "2MEDIA website",
-    "description": "2media website r3f",
-    "date": "October 13, 2022",
+    "description": "2media 3d website using playcanvas, polygon.js and finally settling on react-three-fiber",
+    "date": "October 2022",
     "link": "/test",
-    "tags": "Web Design"
+    "tags": "3D, r&d, Web Design"
   },
   {
     "id": 17,
     "image": "/image15.png",
     "title": "Cpt. Demo LP",
-    "description": "Nobel Prize replica",
-    "date": "November 8, 2021",
-    "link": "",
-    "tags": "Graphic Design"
+    "description": "Nobel Prize replica LP cover",
+    "date": "November 2021",
+    "link": "https://open.spotify.com/album/7K2miboa6cK7WwTFmFAc8n",
+    "tags": "3D, r&d,Graphic Design"
   },
   {
     "id": 23,
     "image": "/image08.png",
     "title": "Burian LP GFX",
-    "description": "cover artwork",
-    "date": "July 14, 2022",
+    "description": "cover artwork design for upcoming Burian LP",
+    "date": "July 2022",
     "link": "",
     "tags": "Graphic Design"
   },
@@ -120,26 +120,26 @@
     "id": 24,
     "image": "/image28.png",
     "title": "Johnny Majestic mv",
-    "description": "Color grading and virtual horse VFX",
-    "date": "August 18, 2022",
-    "link": "",
-    "tags": "VFX"
+    "description": "Color grading and digital talking horse VFX",
+    "date": "August 2022",
+    "link": "https://www.youtube.com/watch?v=LT275WZoh1E&ab_channel=JohnnyMajestic",
+    "tags": "VFX,grading"
   },
   {
     "id": 19,
     "image": "/image16.png",
     "title": "Cpt. Demo mv vfx",
-    "description": "Unreal, BLender, Davinci",
-    "date": "December 15, 2021",
-    "link": "",
-    "tags": "VFX"
+    "description": "I made a bunch of unreal scenes, a bttf-style car entry, a lightsabre streetfight a flying car and hand animated bullets (including their reflection on dat windshield",
+    "date": "December 2021",
+    "link": "https://www.youtube.com/watch?v=aJgvE-T5WQU&ab_channel=DemoCrew",
+    "tags": "VFX,VP,r&d"
   },
   {
     "id": 20,
     "image": "/image10.png",
-    "title": "CPT. Demo CNN Prima SHOWTIME reportage",
-    "description": "Unreal VP",
-    "date": "January 9, 2022",
+    "title": "CPT. Demo CNN reportage",
+    "description": "Unreal VP for CNN Prima SHOWTIME reportage about Cpt. Demo",
+    "date": "January 2022",
     "link": "",
     "tags": "VFX"
   },
@@ -147,28 +147,28 @@
     "id": 22,
     "image": "/image26.png",
     "title": "HPNOVERSE VFX",
-    "description": "VFX, motion tracking, unreal VP",
-    "date": "July 13, 2022",
-    "link": "",
-    "tags": "VFX"
+    "description": "I made a satirical booze commercial come to life with unreal and DaVinci",
+    "date": "July 2022",
+    "link": "https://www.prnewswire.com/news-releases/iconic-liqueur-brand-hpnotiq-invites-consumers-to-enter-the-hpnoverse-with-exclusive-nft-collection--augmented-reality-experience-301627385.html",
+    "tags": "VFX,VP,r&d"
   },
   {
     "id": 5,
     "image": "/image09.png",
     "title": "CIEXPO",
     "description": "http://ciexpo.cz",
-    "date": "February 7, 2018",
-    "link": "",
-    "tags": "3D modeling, AR, Game Design, Implementation Support, VR"
+    "date": "February 2018",
+    "link": "http://www.ciexpo.cz/",
+    "tags": "3D, AR, Game Design, r&d , VR"
   },
   {
     "id": 7,
     "image": "/image04.png",
     "title": "ARROW",
     "description": "Custom branded teambuidling VR archery game featuring boids programmed from scratch",
-    "date": "February 16, 2018",
+    "date": "February 2018",
     "link": "",
-    "tags": "3D modeling, Game Design, VR"
+    "tags": "3D, Game Design, VR"
   },
   {
     "id": 4,
@@ -177,14 +177,14 @@
     "description": "Educational VR game for kids about the life of a bee",
     "date": "January 19, 2018",
     "link": "",
-    "tags": "3D modeling, Game Design, VR"
+    "tags": "3D, Game Design, VR"
   },
   {
     "id": 8,
-    "image": "",
+    "image": "/image38.png",
     "title": "VR and AR for Svoboda Williams",
     "description": "case study for VR and AR in real estate",
-    "date": "January 1, 2019",
+    "date": "January 2019",
     "link": "https://svoboda-williams.com/realitni-zpravy/232-rozsirena-realita-jako-novy-zpusob-prezentace-nemovitosti",
     "tags": "3D modeling, Game Design, VR, Video"
   },
@@ -192,17 +192,17 @@
     "id": 1,
     "image": "/image41.png",
     "title": "ŽIDLICKÝ VR gallery",
-    "description": "first virtual gallery in central Europe :D",
-    "date": "April 13, 2016",
+    "description": "first virtual gallery in central Europe :D ",
+    "date": "April 2015",
     "link": "",
     "tags": "VR"
   },
   {
     "id": 2,
     "image": "/image35.png",
-    "title": "Excalibur",
+    "title": "Excalibur military",
     "description": "VR+AR Military factory presentation for Indonesian Gvt.",
-    "date": "February 16, 2017",
+    "date": "February 2017",
     "link": "",
     "tags": "3D modeling, AR, VR, Video"
   },
@@ -211,7 +211,7 @@
     "image": "/image18.png",
     "title": "old fancy AR tests",
     "description": "early Unity tests with Lucas Saidl",
-    "date": "February 16, 2018",
+    "date": "February 2018",
     "link": "",
     "tags": "AR"
   },
@@ -222,24 +222,24 @@
     "description": "Unreal, BLender, Substance",
     "date": "June 18, 2017",
     "link": "",
-    "tags": "3D modeling, VR"
+    "tags": "3D, VR,r&d"
   },
   {
     "id": 26,
     "image": "/image39.png",
     "title": "WIP trust perfumes website",
-    "description": "r3f",
-    "date": "March 7, 2023",
+    "description": "r3f perfume mixer for artisanal scent creator",
+    "date": "March 2023",
     "link": "",
-    "tags": "3D modeling, Graphic Design, Web Design"
+    "tags": "3D, Graphic Design, Web Design"
   },
   {
     "id": 27,
     "image": "/image36.png",
     "title": "numinos VR timetravel",
     "description": "varied work for Numinos VR timetravel as Tech artist, RnD dev, Render in Unreal Engine",
-    "date": "March 14, 2023",
+    "date": "March 2023",
     "link": "http://numinos.one/",
-    "tags": "3D modeling, Game Design, Implementation Support, Rendering, VR"
+    "tags": "r&d,3D , Game Design, Rendering, VR"
   }
 ]
