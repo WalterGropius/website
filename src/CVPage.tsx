@@ -41,11 +41,11 @@ const ProfileHeader = () => (
 const SummarySection = () => (
     <section className="summary-section">
         <p>
-            I am a lifelong <b>learner</b>, driven by boundless <b>curiosity</b> with a profound passion for the synergy between <b>art</b> and <b>technology</b>.<br />
+            I am a lifelong <b>learner</b>, driven by boundless <b>curiosity</b> with a profound passion for the synergy between <b>art</b> and <b>technology</b>.<br /><br />
             I've dedicated my career to being a <b>bridge</b> between creative <b>visions</b> and technical execution.<br />
-            Whether supporting <b>artists</b> in realizing their concepts or guiding technologists towards aesthetic refinement,<br />my passion lies at the crossroads of <b>imagination</b> and <b>innovation</b>.<br />
+            Whether supporting <b>artists</b> in realizing their concepts or guiding technologists towards aesthetic refinement,<br />my passion lies at the crossroads of <b>imagination</b> and <b>innovation</b>.<br /><br />
              My journey has equipped me with expertise in <b>VR/AR</b> development and real-time digital cinematography and <b>virtual production</b>, primarily within the <b>Unreal engine.</b><br />
-             I've been fortunate to work with both artistic and technical minds, continually learning the importance of functionality, aesthetics and user experience.<br />
+             I've been fortunate to work with both artistic and technical minds, continually learning the importance of functionality, aesthetics and user experience.<br /><br />
              I view every collaboration as an opportunity to bridge the gap between visionary creativity and state of the art technology.<br />
              I'm always eager to collaborate and bring new visions to life.<br />
              Let's embark on the next creative journey together!

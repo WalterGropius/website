@@ -16,81 +16,6 @@
   --color-link-hover: #a07b00;
 }
 
-.cvt {
-  /* Set the padding and margin of the .cvt element */
-  padding: 100px 200px 200px 200px;
-  margin: 200px 200px 200px 200px;
-  font-size: xx-large;
-  height: 100%;
-  width: 100%;
-  align-self: center;
-}
-
-.c9 {
-  /* Set the font size and color of the .c9 class */
-  font-size: 2vh;
-  color: #303a8f;
-}
-
-.c4 {
-  /* Set the font size and color of the .c4 class */
-  font-size: 3vh;
-  color: #882778;
-  
-}
-
-.c0 {
-  /* Set the font size and color of the .c0 class */
-  font-size: 2vh;
-  color: #5d9613;
-}
-
-.c2 {
-  /* Set the font weight of the .c2 class */
-  font-weight: 900;
-}
-
-.c6 {
-  /* Set the font size and color of the .c6 class */
-  font-size: 2.5vh;
-  color: #c9f01d;
-}
-
-.c12 {
-  /* Set the font size and color of the .c12 class */
-  font-size: 1.2vh;
-  color: #128d2c;
-}
-
-.c13 {
-  /* Set the line height of the .c13 class */
-  line-height: 1.5;
-}
-
-.c14 {
-  /* Set the font size and color of the .c14 class */
-  font-size: 0.8vh;
-  color: #ca1515;
-}
-
-.c18 {
-  /* Set the font size and color of the .c18 class */
-  font-size: 1.2vh;
-  color: #0eaa28;
-}
-
-.c21 {
-  /* Set the width and border of the .c21 class */
-  width: 90%;
-  border: 1px solid #ffffff;
-}
-
-.c22 {
-  /* Set the width and border of the .c22 class */
-  width: 10%;
-  border: 1px solid #ffffff;
-}
-
 
 body, html {
   margin: 0;
@@ -216,3 +141,36 @@ a:hover, a:hover {
    /* To break margin collapse */
 }
 
+.search-bar {
+  font-family: 'ZenHand', sans-serif;
+  display: block;        /* Ensure it's a block element so margins work correctly */
+  width: 80%;            /* Use 80% of its parent container's width */
+  max-width: 400px;      /* Limiting the maximum width */
+  margin: 1rem auto;     /* Auto margin on the sides to center the search bar */
+  padding: 0.5rem 1rem;  /* Padding */
+  background-color: rgba(128, 128, 128, 0.123);  /* Background */
+  color: white;          /* Text color */
+  border: none;          /* Remove the border */
+  border-radius: 20px;   /* Rounded edges */
+  outline: none;         /* Remove the focus outline */
+  font-size: 1rem;       /* Font size */
+  text-align: center;    /* Center text inside the input */
+}
+
+.search-bar:focus {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); 
+}
+
+.summary-section {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 20px;
+  background-color: rgba(128, 128, 128, 0.123);
+   */
+   letter-spacing: 0.07rem;
+   line-height: 2rem ;
+}

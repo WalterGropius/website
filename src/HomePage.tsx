@@ -113,7 +113,7 @@ function Model({ open, hinge, ...props }: ModelProps) {
             geometry={nodes['Cube008_2'].geometry}
             scale={[1, 1, -1]} position={[0, -0.01, -0.18]}>
             <meshBasicMaterial attach="material">
-              <videoTexture attach="map" args={[video]} encoding={THREE.sRGBEncoding} />
+              <videoTexture attach="map" args={[video]} colorSpace={THREE.SRGBColorSpace} />
             </meshBasicMaterial>
           </mesh>
         </group>
