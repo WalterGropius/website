@@ -10,6 +10,7 @@ import ReelPage from './ReelPage';
 import CVPage from './CVPage';
 import ArtPage from './ArtPage';
 import Sketchfab from './Sketchfab';
+import Proportion from './Proportion';
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
         <Route path="/reel" element={<ReelPage />} />
         <Route path="/about" element={<CVPage />} />
         <Route path="/art" element={<ArtPage />} />
-        <Route path="/3d" element={<Sketchfab />} />
+        <Route path="/3d" element={<Sketchfab />}/>
+      <Route path="/proportion" element={<Proportion />} />
       </Routes>
     </Router>
   );

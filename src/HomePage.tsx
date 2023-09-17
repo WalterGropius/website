@@ -5,47 +5,14 @@ import { useGLTF, OrbitControls, Environment } from '@react-three/drei';
 import { useSpring } from '@react-spring/core';
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import { a as three } from '@react-spring/three';
+import { Leva,useControls } from 'leva'; 
+import { Perf } from 'r3f-perf';
 
 interface ModelProps {
   open: boolean;
   hinge: any;
   [key: string]: any;
 }
-
-/* function Audio() {
-  
-  const { camera } = useThree();
-  useEffect(() => {
-    camera.add(listener.current);
-    return () => camera.remove(listener.current);}, [camera]);
-  const listener = useRef(new THREE.AudioListener());
-  const soundAmbi = useRef(new THREE.Audio(listener.current));
-  const soundWow = useRef(new THREE.Audio(listener.current));
-
-  const [audioAmbiBuffer, audioWowBuffer] = useLoader(THREE.AudioLoader, [
-    '/ambi.wav',
-    '/wow.wav',
-  ]); 
-
-  useEffect(() => {
-    soundAmbi.current.setBuffer(audioAmbiBuffer);
-    soundAmbi.current.setLoop(true);
-    soundAmbi.current.setVolume(0.5);
-    soundAmbi.current.play();
-
-    return () => {
-      soundAmbi.current.stop();
-    };
-  }, [audioAmbiBuffer]);
-
-  useEffect(() => {
-    soundWow.current.setBuffer(audioWowBuffer);
-    soundWow.current.setLoop(false);
-    soundWow.current.setVolume(1);
-  }, [audioWowBuffer]);
-
-  return null;
-}*/
 
 
 // Moved this component to enhance code clarity
@@ -132,26 +99,39 @@ export default function HomePage() {
   const [open, setOpen] = useState(false);
   const props = useSpring({ open: Number(open) });
 
+  const [debugMode, setDebugMode] = useState(false);
+  const { bloomIntensity, luminanceThreshold, luminanceSmoothing } = useControls({
+  bloomIntensity: 10,
+  luminanceThreshold: 0.5,
+  luminanceSmoothing: 20,
+});
   useEffect(() => {
-    const timer = setTimeout(() => {
-      const event = new MouseEvent('click', {
-        view: window,
-        bubbles: true,
-        cancelable: true
-      });
-
-      document.dispatchEvent(event);
-    }, 800);  // This gives a delay of 500ms, you can adjust this as needed.
-
-    return () => {
-      clearTimeout(timer);  // Cleanup the timer to avoid memory leaks.
+    const handleKeyPress = (event) => {
+      if (event.ctrlKey && event.shiftKey && event.code === 'KeyX') {
+        setDebugMode((prev) => !prev);
+      }
     };
+    window.addEventListener('keydown', handleKeyPress);
+    return () => window.removeEventListener('keydown', handleKeyPress);
+  }, []);
+  
+  useEffect(() => {
+    const handleKey = (event: KeyboardEvent) => {
+      // Trigger when the 'A' key is pressed.
+      if (event.code === 'KeyA') {
+        setOpen(prevOpen => !prevOpen);
+      }
+    };
+
+    window.addEventListener('keydown', handleKey);
+    return () => window.removeEventListener('keydown', handleKey);
   }, []);
 
-
   return (
+    <>
+    
     <Canvas dpr={[1, 2]} camera={{ position: [0, 0, -30], fov: 95 }}>
-        <Suspense fallback={null}>
+      <Suspense fallback={"loading..."}>
             <group rotation={[0, Math.PI, 0]} onClick={() => setOpen(!open)}>
                 <LightingControl open={open} />
                 <Model open={open} hinge={props.open.to([0, 1], [1.575, -0.425])} />
@@ -161,18 +141,21 @@ export default function HomePage() {
         <Environment files={"/flatway2k.hdr"} background blur={0.04}/>
      {/* <ContactShadows position={[0, -4.5, 0]} opacity={0.4} scale={20} blur={1.75} far={4.5} />*/}
      <OrbitControls minDistance={10} maxDistance={20} enablePan={false} minPolarAngle={0} maxPolarAngle={Math.PI / 2} />
-
-      {/* Bloom effect integration */}
+     {debugMode && <Perf position= {"bottom-left"}/>}
       <EffectComposer>
-      
-        <Bloom
-          intensity={10}
-          luminanceThreshold={0.5}
-          luminanceSmoothing={20}
-          height={300}
-        />
+      <Bloom
+        intensity={bloomIntensity}
+        luminanceThreshold={luminanceThreshold}
+        luminanceSmoothing={luminanceSmoothing}
+        height={300}
+      />
       </EffectComposer>
-      {/* <Audio /> */}
-       </Canvas>
+      
+    </Canvas>
+    <div >
+    <Leva hidden={!debugMode} />
+</div>
+
+    </>
   );
 }

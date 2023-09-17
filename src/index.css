@@ -174,3 +174,10 @@ a:hover, a:hover {
    letter-spacing: 0.07rem;
    line-height: 2rem ;
 }
+
+.leva {
+  width: 300px; /* or whatever width you prefer */
+  height: auto;
+  max-height: 90vh; /* or a set pixel value */
+  overflow-y: auto;
+}

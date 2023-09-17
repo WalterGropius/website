@@ -16,6 +16,8 @@
     "axios": "^1.5.0",
     "components": "^0.1.0",
     "googleapis": "^126.0.1",
+    "leva": "^0.9.35",
+    "r3f-perf": "^7.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.2",
