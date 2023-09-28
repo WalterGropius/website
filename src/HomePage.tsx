@@ -106,7 +106,7 @@ export default function HomePage() {
   luminanceSmoothing: 20,
 });
   useEffect(() => {
-    const handleKeyPress = (event) => {
+    const handleKeyPress = (event:any) => {
       if (event.ctrlKey && event.shiftKey && event.code === 'KeyX') {
         setDebugMode((prev) => !prev);
       }
