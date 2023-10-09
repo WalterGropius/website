@@ -1,33 +1,51 @@
-import React from 'react';
-import { useThree, useLoader } from '@react-three/fiber';
-import { TextureLoader, Texture } from 'three';
-import { a, useSpring } from '@react-spring/three';
-import { Plane } from '@react-three/drei';
+// CoverFlow.tsx
+import React, { useState } from 'react';
+import { useSpring, a } from '@react-spring/three';
+import { Text, Image } from '@react-three/drei';
+import { useNavigate } from 'react-router-dom';
 
-// Define prop types
-interface CoverFlowProps {
-  images: { src: string }[]; // If there are other properties in 'images' items, expand this
-  selected: number;
+interface Item {
+  name: string;
+  fimage: string;
 }
 
-const CoverFlow: React.FC<CoverFlowProps> = ({ images, selected }) => {
-  const { size } = useThree();
-  const textures = useLoader(TextureLoader, images.map(img => img.src)) as Texture[];
-  
-  const springProps = useSpring({
-    positionX: -(selected * size.width * 0.1)
-  });
+interface CoverFlowProps {
+  items: Item[];
+  basePath: string; // For example, 'work'
+}
+
+const CoverFlow: React.FC<CoverFlowProps> = ({ items, basePath }) => {
+  const [hovered, setHovered] = useState<number | null>(null);
+  const [scale, setScale] = useState([1, 1, 1]);
+
+// Inside your spring
+const props = useSpring({
+  scale: hovered !== null ? [1.2, 1.2, 1.2] : [1, 1, 1],
+  onChange: ({ value: { scale } }) => setScale(scale as [number, number, number])
+});
+
+  const navigate = useNavigate();
+
+  const handleClick = (itemName: string) => {
+    navigate(`/${basePath}/${itemName}`);
+  };
 
   return (
-    <>
-      {textures.map((texture, index) => (
-        <a.mesh key={index} position-x={springProps.positionX}>
-          <Plane attach="geometry" args={[1, 1.5]} />
-          <meshBasicMaterial attach="material" map={texture} />
-        </a.mesh>
+    <a.group>
+      {items.map((item, index) => (
+        <a.mesh 
+        key={index} 
+        onPointerOver={() => setHovered(index)} 
+        onPointerOut={() => setHovered(null)}
+        onClick={() => handleClick(item.name)}
+        scale={scale as any}  // set scale directly
+      >
+        <Image url={item.fimage} />
+        <Text>{item.name}</Text>
+      </a.mesh>
       ))}
-    </>
+    </a.group>
   );
-}
+};
 
 export default CoverFlow;

@@ -1,5 +1,8 @@
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Canvas } from '@react-three/fiber';
+import { Text, Image, OrbitControls } from '@react-three/drei';
+import { useSpring, a } from '@react-spring/three';
+import { useNavigate } from 'react-router-dom';
 
 type Item = {
   id: number;
@@ -11,66 +14,68 @@ type Item = {
   tags: string;
 };
 
-function PortfolioPage() {
+const PortfolioPage = () => {
   const [items, setItems] = useState<Item[]>([]);
-  const [searchTerm, setSearchTerm] = useState<string>(''); // State for search term
+  const [hovered, setHovered] = useState<number | null>(null);
+  const [isNavigating, setIsNavigating] = useState(false);
+  const [searchTerm, setSearchTerm] = useState<string>('');
+  const navigate = useNavigate();
 
-  // Fisher-Yates shuffle
-  function shuffleArray(array: Item[]) {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
-    }
-  }
+  const { scale } = useSpring({
+    scale: hovered !== null ? [1.2, 1.2, 1.2] : [1, 1, 1],
+    onRest: () => setIsNavigating(false),
+  });
 
   useEffect(() => {
     fetch('/portfolio.json')
-      .then(response => response.json())
-      .then((data: Item[]) => {
-        shuffleArray(data);
-        setItems(data);
-      })
-      .catch(error => console.error('Error:', error));
+      .then((response) => response.json())
+      .then((data: Item[]) => setItems(data))
+      .catch((error) => console.error('Error:', error));
   }, []);
 
-  const filteredItems = items.filter(item =>
-    item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    item.tags.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    item.date.includes(searchTerm)
-  ); // Filtering items based on the search term
+  const handleClick = (item: Item) => {
+    if (!isNavigating) {
+      setIsNavigating(true);
+      navigate(`/work/${item.id}`);
+    }
+  };
+  const [lockHover, setLockHover] = useState(false);
 
   return (
-    <div><br/><br/><br/>
-      {/* Search Bar */}
-      <input 
-        type="text" 
-        placeholder="Search..." 
+    <div>
+      <input
+        type="text"
+        placeholder="Search..."
         value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)} 
-        className='search-bar'
+        onChange={(e) => setSearchTerm(e.target.value)}
+        className="search-bar"
       />
-
-      <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-          gap: '5rem',
-          margin: '0 auto',
-        }}
-      >
-        {filteredItems.map((item, index) => (
-          <div key={index} style={{ padding: '1rem' }}>
-            <Link to={`/work/${item.id}`}>
-              <img src={item.image} style={{ width: '100%', height: '50%', objectFit: 'cover' }} />
-              <h2>{item.title}</h2>
-              <p>{item.tags}</p>
-              <p>{item.date}</p>
-            </Link>
-          </div>
+      <Canvas>
+        {items.map((item, index) => (
+          <a.mesh
+          key={index}
+          position={[0, 0, -index * 2]}
+          onPointerOver={() => {
+            if (!lockHover) {
+              setHovered(index);
+              setLockHover(true);
+            }
+          }}
+          onPointerOut={() => {
+            setHovered(null);
+            setLockHover(false);
+          }}
+          onClick={() => handleClick(item)}
+          scale={scale as any}
+        >
+            <Image url={item.image} />
+            <Text position={[0, -1, 0]}>{item.title}</Text>
+          </a.mesh>
         ))}
-      </div>
+        <OrbitControls />
+      </Canvas>
     </div>
   );
-}
+};
 
 export default PortfolioPage;
