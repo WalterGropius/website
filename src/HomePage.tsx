@@ -130,7 +130,7 @@ export default function HomePage() {
   return (
     <>
     
-    <Canvas dpr={[1, 2]} camera={{ position: [0, 0, -30], fov: 95 }}>
+    <Canvas dpr={[1, 2]} camera={{ position: [0, 0, -30], fov: 95 }} style={{height:"100vh", overflow:"none"}}>
       <Suspense fallback={"loading..."}>
             <group rotation={[0, Math.PI, 0]} onClick={() => setOpen(!open)}>
                 <LightingControl open={open} />

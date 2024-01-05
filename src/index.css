@@ -27,7 +27,7 @@ body, html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 500;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 255);
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 255);
   height: 100%;
   width: 100%;
 }
@@ -73,7 +73,7 @@ nav {
   padding: 1rem 0;
   z-index: 100;
   transition: opacity 0.5s ease;
-  opacity: 0.3;
+  opacity: 0.7;
   margin-top: 0;
 }
 
@@ -84,7 +84,7 @@ nav:hover {
 
 /* Link styles */
 nav a, a {
-  color: #fffaea;
+  color: #ffffff;
   font-weight: 400;
   transition: transform 1s ease, font-size 0.3s ease, font-weight 0.3s ease;
   text-decoration: none;
@@ -142,11 +142,15 @@ a:hover, a:hover {
 }
 
 .search-bar {
+ z-index: 1000;
+position: absolute;
   font-family: 'ZenHand', sans-serif;
   display: block;        /* Ensure it's a block element so margins work correctly */
   width: 80%;            /* Use 80% of its parent container's width */
   max-width: 400px;      /* Limiting the maximum width */
-  margin: 1rem auto;     /* Auto margin on the sides to center the search bar */
+  margin: 1rem auto;
+  top:10vh;
+  right: 10vh; /* Auto margin on the sides to center the search bar */
   padding: 0.5rem 1rem;  /* Padding */
   background-color: rgba(128, 128, 128, 0.123);  /* Background */
   color: white;          /* Text color */

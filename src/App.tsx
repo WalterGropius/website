@@ -11,13 +11,14 @@ import CVPage from './CVPage';
 import ArtPage from './ArtPage';
 import Sketchfab from './Sketchfab';
 import Proportion from './Proportion';
+import HomePageW from './HomePageW';
 
 function App() {
   return (
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePageW />} />
         <Route path="/work" element={<PortfolioPage />} />
         <Route path="/work/:id" element={<ProjectPage/>} />
         <Route path="/reel" element={<ReelPage />} />
