@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { Canvas, useThree } from '@react-three/fiber';
-import { Text, Image, Scroll, ScrollControls, Text3D } from '@react-three/drei';
+import React, { useState, useEffect,useRef } from 'react';
+import { Canvas, useThree,useFrame  } from '@react-three/fiber';
+import { Text, Image, useTexture, Box } from '@react-three/drei';
 import { useSpring, a } from '@react-spring/three';
 import { useNavigate } from 'react-router-dom';
 
@@ -24,22 +24,59 @@ type ItemProps = {
 
 const PortfolioItem = ({ item, hoveredId, setHoveredId, onClick, position }: ItemProps) => {
   const isHovered = hoveredId === item.id;
-  const { scale } = useSpring({ scale: isHovered ? 1.05 : 1 });
+  const { camera } = useThree();
+  const cameraRef = useRef(camera);
+  useEffect(() => {
+    cameraRef.current = camera;
+  });
+
+
+ 
+  const [spring, set] = useSpring(() => ({
+    scale: 1,
+    position: position,
+    config: { mass: 1, tension: 1000, friction: 100 }
+  }));
+  
+  
+  useFrame(() => {
+    // Type 'currentCameraPos' explicitly as a tuple [number, number, number]
+    const currentCameraPos: [number, number, number] = [
+      cameraRef.current.position.x, 
+      cameraRef.current.position.y, 
+      cameraRef.current.position.z - 10,
+    ];
+    set.start({
+      position: isHovered ? currentCameraPos : position,
+      scale: isHovered ? 1.5 : 1,
+    });
+  });
+  const texture = useTexture(item.image);
+  const aspectRatio = texture.image ? texture.image.width / texture.image.height : 1;
+
+  // Define the size of the cube based on the aspect ratio to avoid deformation
+  // Assuming you want to keep the height constant, say 1 unit
+  const cubeHeight = 5;
+  const cubeWidth = aspectRatio * cubeHeight;
+  const cubeDepth = 0.1; // Or any other depth you prefer
+
+
 
   return (
     <a.mesh
       onPointerOver={() => setHoveredId(item.id)}
-      onPointerOut={() => setHoveredId(null)}
+     
       onClick={(e) => {
         e.stopPropagation();
         onClick(item);
       }}
-      scale={scale}
-      position={position}
-      rotation={[0,-0.1,0]}
+      scale={spring.scale}
+      position={spring.position}
+      rotation={[0, -0.1, 0]}
     >
-      <Image url={item.image} scale={7} />
-      <Text font='/zenhand.ttf'  position={[-10, 3, -1]}>{item.title}</Text>
+      {/* <Image url={item.image} scale={7} /> */}
+      <Box scale={[cubeWidth, cubeHeight, cubeDepth]}><meshBasicMaterial attach="material" map={texture} /></Box>
+      <Text outlineColor={"black"} outlineWidth={0.1} scale={0.5} color="white" font='/zenhand.ttf' position={[0,0,1]}>{item.title}</Text>
     </a.mesh>
   );
 };
@@ -75,9 +112,9 @@ const PortfolioPage = () => {
         onChange={(e) => setSearchTerm(e.target.value)}
       /> 
       <Canvas>
-      <fog attach="fog" args={['#f3f3f3', 0, 100]} />
-        <ScrollControls pages={filteredItems.length / 5}>
-          
+      <fog attach="fog" args={['#000000', 0, 100]} />
+        {/* <ScrollControls  horizontal pages={filteredItems.length / 5}>
+          <Scroll> */}
             {filteredItems.map((item, index) => (
               <PortfolioItem
                 key={item.id}
@@ -85,11 +122,11 @@ const PortfolioPage = () => {
                 hoveredId={hoveredId}
                 setHoveredId={setHoveredId}
                 onClick={handleClick}
-                position={[ index * -3+2, -index * 3,  -index * 5-5]} // Adjust position based on index
+                position={[ index * 0-30, -index *3+20,  -index * 2-30]} // Adjust position based on index
               />
             ))}
-          
-        </ScrollControls>
+          {/* </Scroll>
+        </ScrollControls> */}
       </Canvas>
     </div>
   );
