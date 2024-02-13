@@ -30,13 +30,13 @@ export default function HomePageW() {
         rotation={[0, 1, 0]}
         polar={[-Math.PI / 3, Math.PI / 3]}
         azimuth={[-Math.PI / 1.4, Math.PI / 2]}>
-        <Float>
+        
           <Splat
             scale={1.2}
             rotation={[0, -0.7 * Math.PI, 0]}
             src="flowers_white.splat"
           />
-        </Float>
+        
       </PresentationControls>
      
       <mesh position={[0, -1.5, 0]} rotation={[-Math.PI / 2, 0, 0]}>
