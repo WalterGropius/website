@@ -1,6 +1,6 @@
 // CoverFlow.tsx
-import React, { useState } from 'react';
-import { useSpring, a } from '@react-spring/three';
+/*import React, { useState } from 'react'; 
+import { useSpring, a } from '@react-spring/three'; 
 import { Text, Image } from '@react-three/drei';
 import { useNavigate } from 'react-router-dom';
 
@@ -16,13 +16,13 @@ interface CoverFlowProps {
 
 const CoverFlow: React.FC<CoverFlowProps> = ({ items, basePath }) => {
   const [hovered, setHovered] = useState<number | null>(null);
-  const [scale, setScale] = useState([1, 1, 1]);
+  const [scale, setScale] = useState([1, 1, 1]); */
 
 // Inside your spring
-const props = useSpring({
+/* const props = useSpring({
   scale: hovered !== null ? [1.2, 1.2, 1.2] : [1, 1, 1],
   onChange: ({ value: { scale } }) => setScale(scale as [number, number, number])
-});
+}); 
 
   const navigate = useNavigate();
 
@@ -30,8 +30,8 @@ const props = useSpring({
     navigate(`/${basePath}/${itemName}`);
   };
 
-  return (
-    <a.group>
+  return ()
+     <a.group>
       {items.map((item, index) => (
         <a.mesh 
         key={index} 
@@ -44,8 +44,8 @@ const props = useSpring({
         <Text>{item.name}</Text>
       </a.mesh>
       ))}
-    </a.group>
-  );
-};
+    </a.group>  );};
+ 
 
-export default CoverFlow;
+
+export default CoverFlow*/

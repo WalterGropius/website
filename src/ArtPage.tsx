@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Canvas } from '@react-three/fiber';
-import CoverFlow from './CoverFlow';
+//import CoverFlow from './CoverFlow';
 import artData from './art.json';
 
 function ArtPage() {
@@ -18,7 +18,7 @@ function ArtPage() {
     <div>
       <Canvas>
         <ambientLight />
-        <CoverFlow images={artData} selected={selected} />
+       {/*  <CoverFlow images={artData} selected={selected} /> */}
       </Canvas>
       <button onClick={handlePrev}>Previous</button>
       <button onClick={handleNext}>Next</button>

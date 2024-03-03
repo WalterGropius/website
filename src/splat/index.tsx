@@ -8,7 +8,15 @@ import { extend, useThree, useFrame } from '@react-three/fiber'
 import { SplatMaterial } from './SplatMaterial'
 import { createWorker } from './worker'
 
-export function Splat({ src, ...props }) {
+interface SplatProps {
+  src: string;
+  scale?: number | [number, number, number];
+  rotation?: [number, number, number];
+  // Add other props as necessary
+} 
+
+
+export const Splat: React.FC<SplatProps> = ({ src, scale, rotation, ...props }) =>{
   extend({ SplatMaterial })
   const worker = useMemo(
     () =>

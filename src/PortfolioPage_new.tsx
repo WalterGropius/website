@@ -1,6 +1,6 @@
-import React, { useState, useEffect,useRef } from 'react';
+import  { useState, useEffect,useRef } from 'react';
 import { Canvas, useThree,useFrame  } from '@react-three/fiber';
-import { Text, Image, useTexture, Box } from '@react-three/drei';
+import { Text, useTexture, Box } from '@react-three/drei';
 import { useSpring, a } from '@react-spring/three';
 import { useNavigate } from 'react-router-dom';
 

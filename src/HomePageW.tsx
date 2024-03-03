@@ -1,8 +1,9 @@
 import { Canvas } from '@react-three/fiber'
-import { CameraControls, Environment, Float, MeshReflectorMaterial, Plane, PresentationControls, ContactShadows, Text, Text3D, Center } from '@react-three/drei'
-import { EffectComposer, SSAO, Bloom, DepthOfField, Vignette, BrightnessContrast, HueSaturation } from '@react-three/postprocessing'
-import { Splat } from './splat'
-import { MeshBasicMaterial } from 'three'
+import {  PresentationControls } from '@react-three/drei'
+//import { EffectComposer, SSAO, Bloom, DepthOfField, Vignette, BrightnessContrast, HueSaturation } from '@react-three/postprocessing'
+
+//import { MeshBasicMaterial } from 'three'
+import { Splat } from './splat';
 
 export default function HomePageW() {
   return (

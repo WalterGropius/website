@@ -3,8 +3,8 @@
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Header';
-import HomePage from './HomePage';
-import PortfolioPage from './PortfolioPage';
+//import HomePage from './HomePage';
+//import PortfolioPage from './PortfolioPage';
 import ProjectPage from './ProjectPage';
 import ReelPage from './ReelPage';
 import CVPage from './CVPage';
@@ -19,7 +19,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePageW />} />
-        <Route path="/work" element={<PortfolioPage />} />
+        {/* <Route path="/work" element={<PortfolioPage />} /> */}
         <Route path="/work/:id" element={<ProjectPage/>} />
         <Route path="/reel" element={<ReelPage />} />
         <Route path="/about" element={<CVPage />} />
